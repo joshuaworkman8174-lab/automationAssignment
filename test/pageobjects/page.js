@@ -6,3 +6,4 @@ export default class Webpage {
         return browser.url(`https://www.saucedemo.com/`)
     }
 }
+

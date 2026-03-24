@@ -15,6 +15,11 @@ class LoginPage extends Page {
         return $('#login-button');
     }
 
+    get loginError () {
+        return $('#error-message-container error')
+    }
+
+
     async login (username, password) {
         await this.enterUsername.setValue(username);
         await this.person1Password.setValue(password);
